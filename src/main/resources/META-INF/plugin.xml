@@ -1,0 +1,62 @@
+<idea-plugin>
+    <id>com.htmlcellviewer</id>
+    <name>HTML Cell Viewer</name>
+    <version>1.0.0</version>
+    <vendor email="support@htmlcellviewer.org" url="https://github.com/html-cell-viewer">HTML Cell Viewer Authors</vendor>
+
+    <description><![CDATA[
+    Preview and inspect rendered HTML content directly from database table cells in your IDE.
+    <br><br>
+    <h3>Features</h3>
+    <ul>
+        <li><b>Context Menu Preview:</b> Right-click any database cell containing HTML and select <i>View Rendered HTML</i> (or press <code>Ctrl+Alt+H</code> / <code>Option+Shift+H</code>).</li>
+        <li><b>Chromium-Powered Rendering:</b> Uses Chromium Embedded Framework (JCEF) for modern HTML5, CSS3, SVG, images, tables, and formatting.</li>
+        <li><b>Strict Security:</b> Blocks arbitrary script execution via Content Security Policy and prevents link navigation while preserving link hover hand cursors.</li>
+        <li><b>Dual View:</b> Toggle between the interactive rendered preview and formatted raw HTML source code.</li>
+        <li><b>Toolbar Controls:</b> Copy raw HTML to clipboard or open directly in your external default web browser.</li>
+    </ul>
+
+    <h3>Getting Started</h3>
+    <ol>
+        <li>Open a database table or execute a SQL query returning HTML data.</li>
+        <li>Right-click on any cell containing HTML markup.</li>
+        <li>Select <b>View Rendered HTML</b> (or press <code>Ctrl+Alt+H</code> / <code>Option+Shift+H</code>).</li>
+        <li>Inspect the rendered result or switch tabs to view the raw HTML source code.</li>
+    </ol>
+    ]]></description>
+
+    <change-notes><![CDATA[
+    <h3>1.0.0</h3>
+    <ul>
+        <li>Initial release of HTML Cell Viewer.</li>
+        <li>Render database cell HTML content via Chromium JCEF with Swing fallback.</li>
+        <li>Context menu integration in query result tables (<code>Console.TableResult.PopupGroup</code>) and keyboard shortcut <code>Ctrl+Alt+H</code> / <code>Option+Shift+H</code>.</li>
+        <li>Smart HTML detection filtering for cell context menus.</li>
+        <li>Strict Content Security Policy (CSP) blocking untrusted scripts.</li>
+        <li>Links show hover hand cursor while preventing accidental navigation.</li>
+        <li>Dual tabbed preview for rendered web output and raw HTML source.</li>
+        <li>Export utilities: Copy raw HTML to clipboard and open in external browser.</li>
+    </ul>
+    ]]></change-notes>
+
+    <!-- Dependencies -->
+    <depends>com.intellij.modules.platform</depends>
+    <depends>com.intellij.database</depends>
+
+    <actions>
+        <action id="DataGripHtmlViewer.ViewHtml"
+                class="com.datagrip.htmlviewer.ViewHtmlAction"
+                text="View Rendered HTML"
+                description="Renders the HTML content of the selected database cell in a browser viewer"
+                icon="/icons/htmlIcon.svg">
+
+            <!-- DataGrip Grid & Cell Context Menus -->
+            <add-to-group group-id="Console.TableResult.PopupGroup" anchor="first"/>
+
+            <keyboard-shortcut first-keystroke="control alt H" keymap="$default"/>
+            <keyboard-shortcut first-keystroke="alt shift H" keymap="Mac OS X 10.5+"/>
+            <keyboard-shortcut first-keystroke="alt shift H" keymap="Mac OS X"/>
+            <keyboard-shortcut first-keystroke="alt shift H" keymap="macOS"/>
+        </action>
+    </actions>
+</idea-plugin>
