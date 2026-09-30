@@ -1,0 +1,14 @@
+<ivy-module version="2.0">
+  <info organisation="bundledPlugin" module="intellij.grid.impl" revision="241.14494.251+599"/>
+  <configurations>
+    <conf name="default" visibility="public"/>
+  </configurations>
+  <publications>
+    <artifact name="/Users/qwert/.gradle/caches/transforms-4/04ebd9ce6e7c5faf0dc0a0fbb1f9c5cf/transformed/datagrip-2024.1-win/plugins/grid-impl" type="directory" conf="default"/>
+  </publications>
+  <dependencies>
+    <dependency org="bundledPlugin" name="intellij.charts" rev="241.14494.251+955"/>
+    <dependency org="bundledPlugin" name="intellij.grid.core.impl" rev="241.14494.251+783"/>
+    <dependency org="bundledPlugin" name="com.intellij.platform.images" rev="241.14494.251+514"/>
+  </dependencies>
+</ivy-module>
