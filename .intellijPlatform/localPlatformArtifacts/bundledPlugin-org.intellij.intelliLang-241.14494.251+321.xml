@@ -1,0 +1,12 @@
+<ivy-module version="2.0">
+  <info organisation="bundledPlugin" module="org.intellij.intelliLang" revision="241.14494.251+321"/>
+  <configurations>
+    <conf name="default" visibility="public"/>
+  </configurations>
+  <publications>
+    <artifact name="/Users/qwert/.gradle/caches/transforms-4/04ebd9ce6e7c5faf0dc0a0fbb1f9c5cf/transformed/datagrip-2024.1-win/plugins/platform-langInjection" type="directory" conf="default"/>
+  </publications>
+  <dependencies>
+    <dependency org="bundledPlugin" name="XPathView" rev="241.14494.251+613"/>
+  </dependencies>
+</ivy-module>

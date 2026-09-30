@@ -1,0 +1,10 @@
+<ivy-module version="2.0">
+  <info organisation="bundledPlugin" module="com.intellij.platform.images" revision="241.14494.251+432"/>
+  <configurations>
+    <conf name="default" visibility="public"/>
+  </configurations>
+  <publications>
+    <artifact name="/home/ubuntu/.gradle/caches/transforms-4/9cb5e879fd573b500b96adc30a77f864/transformed/datagrip-2024.1/plugins/platform-images" type="directory" conf="default"/>
+  </publications>
+  <dependencies/>
+</ivy-module>

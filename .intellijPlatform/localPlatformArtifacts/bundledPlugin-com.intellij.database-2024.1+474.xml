@@ -1,0 +1,17 @@
+<ivy-module version="2.0">
+  <info organisation="bundledPlugin" module="com.intellij.database" revision="2024.1+474"/>
+  <configurations>
+    <conf name="default" visibility="public"/>
+  </configurations>
+  <publications>
+    <artifact name="/home/ubuntu/.gradle/caches/transforms-4/9cb5e879fd573b500b96adc30a77f864/transformed/datagrip-2024.1/plugins/DatabaseTools" type="directory" conf="default"/>
+  </publications>
+  <dependencies>
+    <dependency org="bundledPlugin" name="intellij.grid.core.impl" rev="241.14494.251+431"/>
+    <dependency org="bundledPlugin" name="org.intellij.intelliLang" rev="241.14494.251+161"/>
+    <dependency org="bundledPlugin" name="com.intellij.completion.ml.ranking" rev="241.14494.251+247"/>
+    <dependency org="bundledPlugin" name="intellij.grid.impl" rev="241.14494.251+619"/>
+    <dependency org="bundledPlugin" name="com.intellij.platform.images" rev="241.14494.251+432"/>
+    <dependency org="bundledPlugin" name="com.intellij.diagram" rev="241.14494.251+770"/>
+  </dependencies>
+</ivy-module>

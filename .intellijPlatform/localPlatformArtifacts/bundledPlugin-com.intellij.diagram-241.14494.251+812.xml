@@ -1,0 +1,10 @@
+<ivy-module version="2.0">
+  <info organisation="bundledPlugin" module="com.intellij.diagram" revision="241.14494.251+812"/>
+  <configurations>
+    <conf name="default" visibility="public"/>
+  </configurations>
+  <publications>
+    <artifact name="/Users/qwert/.gradle/caches/transforms-4/04ebd9ce6e7c5faf0dc0a0fbb1f9c5cf/transformed/datagrip-2024.1-win/plugins/uml" type="directory" conf="default"/>
+  </publications>
+  <dependencies/>
+</ivy-module>
